@@ -9,7 +9,7 @@ body {
 .container {
 	max-width: 1440px;
 	margin: 0 auto;
-	padding: 0 15px;
+	padding: 0 25px;
 }
 .flex {
 	display: flex;
@@ -21,6 +21,15 @@ body {
 	align-items: center;
 }
 
+.grid {
+	display: grid;
+}
+.grid--col-3 {
+	grid-template-columns: 1fr 1fr 1fr;
+}
+.gap-md {
+	gap: 2rem;
+}
 /***************************************/
 /* HEADER */
 /***************************************/
@@ -33,7 +42,7 @@ body {
 
 .main-nav-list {
 	list-style: none;
-	gap: 1.5rem;
+	gap: 3rem;
 }
 
 a:link,
@@ -73,7 +82,29 @@ a:active {
 	grid-row: span 2;
 	padding: 2rem 1.5rem;
 }
-
+.aside-heading {
+	color: #e9ab53;
+	font-size: 2rem;
+	font-weight: 550;
+	margin-bottom: 1.2rem;
+}
+.aside-item {
+	border-bottom: 1px solid #c5c6ce64;
+	margin-bottom: 2rem;
+}
+.aside-item:last-child {
+	border: none;
+}
+.aside-item-heading {
+	color: #fff;
+	margin-bottom: 0.7rem;
+}
+.aside-item-description {
+	font-size: 15px;
+	color: #5d5f79;
+	line-height: 2;
+	margin-bottom: 3rem;
+}
 .main-heading {
 	/* background-color: green; */
 	font-size: 3.5rem;
@@ -105,4 +136,17 @@ a:active {
 	text-transform: uppercase;
 	letter-spacing: 2.5px;
 	width: 50%;
+}
+
+/***************************************/
+/* FEATUERS SECTION */
+/***************************************/
+.section-features {
+	padding: 4rem 0;
+}
+.features-content {
+}
+.feature-box {
+	display: grid;
+	grid-template-columns: 40fr 60fr;
 }
